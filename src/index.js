@@ -23,8 +23,6 @@ app.delete("/page/:id", PageModel.deletePage);
 app.post("/page/hierarchy", PageModel.hierarchy);
 app.post("/user/login", UserModel.login);
 
-app.post("/workspace/", PageModel.workspace);
-
 app.get("/", function(req, res) {
   res.send("Server started - listening on port " + port);
 });
