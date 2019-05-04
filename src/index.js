@@ -21,6 +21,7 @@ app.post("/page/", PageModel.createPage);
 app.delete("/page/:id", PageModel.deletePage);
 
 app.post("/page/hierarchy", PageModel.hierarchy);
+
 app.post("/user/login", UserModel.login);
 
 app.get("/", function(req, res) {

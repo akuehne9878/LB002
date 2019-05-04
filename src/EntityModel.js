@@ -32,6 +32,8 @@ var EntityModel = {
       var query = "SELECT * FROM " + entityName + " WHERE 1=1";
       var values = [];
 
+      console.log("RRRRR: " + JSON.stringify(searchObj));
+
       if (searchObj) {
         Object.keys(searchObj).forEach(function(key) {
           query += "\n AND " + key + " = ?";

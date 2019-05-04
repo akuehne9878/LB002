@@ -10,7 +10,7 @@ function handleResult(rows, res) {
 
 var PageModel = {
   searchPage: function(req, res) {
-    EntityModel.searchEntity(entityName, req.body.object).then(function(data) {
+    EntityModel.searchEntity(entityName, req.query).then(function(data) {
       handleResult(data, res);
     });
   },
